@@ -10,7 +10,7 @@ const keys = require('./config/keys');
 
 const app = express();
 app.get('/',(req,res)=>{
-    res.send("hi")
+    res.send({"hi":"there"})
 })
 app.use(cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,
