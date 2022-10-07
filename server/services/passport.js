@@ -1,4 +1,4 @@
-const passport = require('services/passport'); // gives express the idea how to handle auth
+const passport = require('server/services/passport'); // gives express the idea how to handle auth
 const GoogleStrategy = require('passport-google-oauth20').Strategy; // instruct passport how to auth our user with google Oauth
 const mongoose = require('mongoose');
 const keys = require('../config/keys');
