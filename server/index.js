@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === 'production') {
     // express will serve up the index.js , if it doesn't recognize the route
     const path = require('path');
     app.get('*',(req,res)=>{
-        res.sendFile(path.resolve(__dirname('client','build','client')))
+        res.sendFile(path.resolve(__dirname,'client','build','client'));
     })
 }
 const PORT = process.env.PORT || 5000;
